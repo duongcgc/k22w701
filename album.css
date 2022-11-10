@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+
+.album {
+    width: 400px;
+    border: solid 5px gray;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.album__list-thumbnail {
+    display: flex;  
+    width: 370px;  
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.album__thumbnail img {
+    width: 65px;
+    height: auto;
+}
