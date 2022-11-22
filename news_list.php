@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>News</title>
+    <title>News List - Server - Trả ra kết quả</title>
     <style>
         .current {
             color: red;
@@ -67,31 +67,6 @@
         if ($sapxep == 'desc') { arsort($news_item); }  
         
     ?>
-
-    <!-- 4 - giao diện tương tác => View -->
-    <select name="sort" id="sort">
-        <option value="default" <?php echo $sapxep=='default' ? 'selected':''; ?> >Mặc định</option>
-        <option value="asc" <?php echo $sapxep=='asc' ? 'selected':''; ?> >Tăng dần</option>
-        <option value="desc" <?php echo $sapxep=='desc' ? 'selected':''; ?> >Giảm dần</option>
-    </select>   
-
-    <script>
-
-        // 5 - gửi giá trị lên url Controller - Mỗi khi thay đổi select có id=sort thì tự động chuyển url = javascript thành url mới giá trị vừa mới chọn  thay đổi xong
-        select_option = document.getElementById('sort');
-        select_option.onchange = function(){
-            location.href = 'http://localhost/k22w701/news.php?sort=' + select_option.value;
-        }
-
-    </script>
-    
-    <hr/>    
-
-    <a href="http://localhost/k22w701/news.php?sort=default" >Mặc định</a> | 
-    <a href="http://localhost/k22w701/news.php?sort=asc" class="current">Tăng dần</a> | 
-    <a href="http://localhost/k22w701/news.php?sort=desc" 5>Giảm dần</a>
-
-    <hr/>    
 
     <?php 
         // 6 - Trả ra kết quả View
