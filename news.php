@@ -87,9 +87,9 @@
     
     <hr/>    
 
-    <a href="http://localhost/k22w701/news.php?sort=default" >Mặc định</a> | 
-    <a href="http://localhost/k22w701/news.php?sort=asc" class="current">Tăng dần</a> | 
-    <a href="http://localhost/k22w701/news.php?sort=desc" 5>Giảm dần</a>
+    <a href="http://localhost/k22w701/news.php?sort=default" <?php echo $sapxep=='default' ? 'class="current"':''; ?> >Mặc định</a> | 
+    <a href="http://localhost/k22w701/news.php?sort=asc" <?php echo $sapxep=='asc' ? 'class="current"':''; ?> >Tăng dần</a> | 
+    <a href="http://localhost/k22w701/news.php?sort=desc" <?php echo $sapxep=='desc' ? 'class="current"':''; ?>>Giảm dần</a>
 
     <hr/>    
 
