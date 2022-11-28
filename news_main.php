@@ -1,3 +1,5 @@
+<?php include 'templates/config.php'; ?>
+
 <?php include 'templates/header.php'; ?>
 
 <!-- News Header -->
@@ -5,6 +7,10 @@
 
 <!-- Selector Sort  -->
 <?php include 'templates/sort-selector.php'; ?>
+
+
+<?php include 'templates/get-data-news.php'; ?>
+
 
 <!-- Script Ajax -->
 <?php include 'templates/ajax-request.php'; ?>

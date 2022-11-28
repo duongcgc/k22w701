@@ -3,3 +3,8 @@
     </footer>
 </body>
 </html>
+
+
+<?php 
+    $conn_w701 = null;
+?>
