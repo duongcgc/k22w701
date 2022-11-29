@@ -18,6 +18,7 @@
 
         echo "Tin mới đã thêm";
         
+        // Quay về trang chính
         header("Location: /k22w701/news_main.php");
         exit;
 
