@@ -15,6 +15,31 @@
             color: red;
             font-weight: bold;
         }
+
+        .news-button {
+            display: inline-block;
+            text-decoration: none;
+            font-weight: bold;
+            border: solid 1px gray;
+            padding: 5px 10px;
+            font-size: 14px;
+            margin-bottom: 10px;           
+        }
+
+        .news-select {
+            display: inline-block;
+            font-weight: bold;
+            border: solid 1px gray;
+            padding: 5px 10px;
+            margin-bottom: 10px;           
+        }
+
+        .news-field {
+            display: inline-block;
+            border: solid 1px gray;
+            padding: 5px 10px; 
+            margin-bottom: 10px;           
+        }
     </style>
 </head>
 <body>
