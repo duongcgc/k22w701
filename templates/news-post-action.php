@@ -4,11 +4,9 @@
 
     // Nhận thông tin từ form
     $tieude = isset($_POST['tieude'])? $_POST['tieude'] : 'Không thấy tên biến Tiêu đề';
-
-    $hinhanh = isset($_FILES["hinhanh"]["name"])? $_FILES["hinhanh"]["name"] : 'Không thấy tên biến Hình ảnh';
-
-    $upload_dir = 'uploads/';
-    $upload_file = $upload_dir . basename($hinhanh);
+    $hinhanh = isset($_POST['hinhanh'])? $_POST['hinhanh'] : 'Không thấy tên biến Hình ảnh';
+    
+    $upload_file = $hinhanh;
 
 
     // Thêm vào DB
