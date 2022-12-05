@@ -12,14 +12,17 @@ $news_item = $news_data->fetchAll(PDO::FETCH_ASSOC);
 
 foreach($news_item as $item) {    
     
-    echo '<hr />';    
+    echo '<hr />';
+    ?>
+        <div class="news_item">
+            <div class="news_item__thumbnail">
+                <a href=""><img src="<?php echo $item['hinhanh']; ?>" alt="" style="width:100px; height:auto;border:solid 2px gray;"></a>
+            </div>
+            <h2 class="news_item__heading"><a href=""><?php echo $item['tieude']; ?></a></h2>        
+            <p><span class="news_item__date"><?php echo $item['ngaydang']; ?></span></p>
+            <div class="news_content"><?php echo $item['noidung']; ?></div>
+        </div>
 
-    echo $item['hinhanh'] . " | ";
-    echo $item['tieude'] . " | ";
-    echo $item['ngaydang'] . " | ";
-
-    
+    <?php
 }
-
-
 ?>
