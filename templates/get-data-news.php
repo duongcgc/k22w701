@@ -20,11 +20,13 @@ foreach($news_item as $item) {
             <div class="news_item__summary" style="float: ;left">
                 <h2 class="news_item__heading"><a href="news_detail.php?id=<?php echo $item['news_id']; ?>"><?php echo $item['tieude']; ?></a></h2>        
                 <p><span class="news_item__date"><?php echo $item['ngaydang']; ?></span></p>
-                <div class="readmore"><a href="news_detail.php?id=<?php echo $item['news_id']; ?>">Xem chi tiết ...</a></div>
+                <div class="readmore">
+                   <a href="news_detail.php?id=<?php echo $item['news_id']; ?>">Xem chi tiết ...</a>
+                 | <a href="news_edit.php?id=<?php echo $item['news_id']; ?>">Sửa</a></div>
             </div>
         </div>
         <br>
-        <hr style="clear: both; margin-top:15px;" />
+        <hr style="clear:both; margin-top:15px" />
 
     <?php
 }
